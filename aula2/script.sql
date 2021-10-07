@@ -1,10 +1,8 @@
--- INSERE DADOS
-INSERT INTO funcionario (nome, cargo) VALUES ('Jonathan', 'Tech Lead');
--- ALTERA DADOS
-UPDATE funcionario SET cargo = 'Estudante' WHERE id IN (2, 3);
--- SELECIONA DADOS
-SELECT * FROM funcionario;
--- DELETA DADOS
-DELETE FROM funcionario;
--- LIMPA A TABELA
-TRUNCATE TABLE funcionario;
+CREATE DATABASE `cadastro`;
+use `cadastro`;
+CREATE TABLE `funcionario` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `nome` varchar(50) DEFAULT NULL,
+  `cargo` varchar(45) DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=10 DEFAULT CHARSET=latin1;
